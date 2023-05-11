@@ -4,33 +4,51 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Satwik Kar</title>
+    <title>Portfolio@Satwik</title>
 </head>
 <script src="Js/index.js"></script>
 <body style="background-image:url('assets/bg.jpg');background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;">
-<nav class="navbar" style="overflow: hidden">
+<nav class="navbar"
+     style="backdrop-filter: blur(11px);border:5px solid rgba(255,255,255,0.7);border-radius: 70px;padding: 9px">
 
-    <ul style="list-style-type: circle;">
-        <li><a href="#">Title</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
+    <ul style=" list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;">
+        <li style="float: right;margin-left: 20px">
+            <button style="border:5px solid white ;border-radius: 18px;background-color: white">About</button>
+        </li>
+        <li style="float: right;margin-left: 20px">
+            <button style="border:5px solid white ;border-radius: 18px;background-color: white">Contact</button>
+        </li>
+        <li style="float: right;margin-left: 20px">
+            <button style="border:5px solid white ;border-radius: 18px;background-color: white">Home</button>
+        </li>
     </ul>
 
 
-
-
 </nav>
+<br>
 
-<div align = 'center' style="border: 5px solid rgba(246,216,118,0.3);border-radius: 70px;box-shadow: 0 3px 10px rgb(0 0 0 / .4);backdrop-filter: blur(11px)">
+<div align='center'
+     style="flex-direction:row;display: flex;flex:1;border: 5px solid rgba(255,255,255,0.7);border-radius: 70px;box-shadow: 0 3px 10px rgb(0 0 0 / .4);backdrop-filter: blur(11px)">
     <br>
-    <img src="assets/my_image.jpg" style="width: 20%;height: 20%;border-radius: 100%"/>
-    <h1 style="color: white">Satwik Sahil Kar</h1>
+    <div style="flex:4">
+        <br>
+        <img src="assets/my_image.jpg"
+             style="width: 178px;height: 178px;border-radius: 100%;align-self: center;justify-content: center"
+             alt="no Image"/>
+        <h1 style="color: white;">Satwik Sahil Kar</h1>
+    </div>
+    <div style="flex:1;align-items: center;display: flex;justify-content: center">
+        <a href=url('www.google.com') style="text-align: center"><img title="GitHub"  src="assets/github-mark-white.png"
+                                                                      style="width: 50px;height: 50px" alt="GitHub"></a>
+    </div>
+
 
 </div>
-
 
 
 </body>
