@@ -3,28 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-
     <title>Portfolio@Satwik</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <script src="Js/index.js"></script>
-<body style="background-image:url('assets/bg.jpg');background-repeat: no-repeat;
+<body
+        style="font-family: monospace;background-image:url('assets/bg.jpg');background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;">
-<nav class="navbar"
-     style="backdrop-filter: blur(11px);border:5px solid rgba(255,255,255,0.7);border-radius: 70px;padding: 9px">
-
-    <ul style=" list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;">
-        <li style="float: right;margin-left: 20px">
-            <button style="border:5px solid white ;border-radius: 18px;background-color: white">About</button>
+<nav class="navbar">
+    <ul class="unordered-list">
+        <li class="li">
+            <button class="navbar_buttons">About</button>
         </li>
-        <li style="float: right;margin-left: 20px">
-            <button style="border:5px solid white ;border-radius: 18px;background-color: white">Contact</button>
+        <li class="li">
+            <button class="navbar_buttons">Contact</button>
         </li>
-        <li style="float: right;margin-left: 20px">
-            <button style="border:5px solid white ;border-radius: 18px;background-color: white">Home</button>
+        <li class="li">
+            <button class="navbar_buttons">Home</button>
+        </li>
+        <li class="li">
+            <button class="navbar_buttons">Skills</button>
         </li>
     </ul>
 
@@ -32,19 +31,48 @@
 </nav>
 <br>
 
-<div align='center'
-     style="flex-direction:row;display: flex;flex:1;border: 5px solid rgba(255,255,255,0.7);border-radius: 70px;box-shadow: 0 3px 10px rgb(0 0 0 / .4);backdrop-filter: blur(11px)">
-    <br>
+<div class="mainDivOfProfileSec" align='center'>
     <div style="flex:4">
         <br>
-        <img src="assets/my_image.jpg"
-             style="width: 178px;height: 178px;border-radius: 100%;align-self: center;justify-content: center"
-             alt="no Image"/>
+        <img class="profileDp" src="assets/my_image.jpg"
+             alt="Profile Image"/>
         <h1 style="color: white;">Satwik Sahil Kar</h1>
     </div>
-    <div style="flex:1;align-items: center;display: flex;justify-content: center">
-        <a href=url('www.google.com') style="text-align: center"><img title="GitHub"  src="assets/github-mark-white.png"
-                                                                      style="width: 50px;height: 50px" alt="GitHub"></a>
+    <div class="logosDiv">
+        <div class="singleLogo">
+            <a class="logo_anchor" href='www.google.com'>
+                <img title="GitHub"
+                     src="assets/github-mark-white.png"
+                     style="width: 50px;height: 50px"
+                     alt="GitHub">
+            </a>
+            <text style="flex:5;text-align: center;font-size: 24px">GitHub</text>
+        </div>
+        <div class="singleLogo">
+            <a class="logo_anchor" href='www.google.com'>
+                <img class="anchorImage" title="Gmail" src="assets/gmail_icon.png"
+
+                     alt="Gmail">
+            </a>
+            <text style="flex:5;text-align: center;font-size: 24px">Gmail</text>
+        </div>
+        <div class="singleLogo">
+            <a class="logo_anchor" href='www.google.com'>
+                <img class="anchorImage" title="Gmail" src="assets/twitter_icon.png"
+
+                     alt="Twitter">
+            </a>
+            <text style="flex:5;text-align: center;font-size: 24px">Twitter</text>
+        </div>
+        <div class="singleLogo">
+            <a class="logo_anchor" href='www.google.com'>
+                <img class="anchorImage" title="Gmail" src="assets/unstop-logo.svg"
+
+                     alt="Unstop">
+            </a>
+            <text style="flex:5;text-align: center;font-size: 24px">Unstop</text>
+        </div>
+
     </div>
 
 
