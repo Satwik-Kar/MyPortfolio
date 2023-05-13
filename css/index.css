@@ -21,11 +21,15 @@
 .navbar_buttons {
     border: 5px solid white;
     border-radius: 18px;
-    background-color: white;cursor: pointer;
+    background-color: white;
+    cursor: pointer;
 }
-.navbar_buttons:hover{
-    background-color: blanchedalmond; border: 5px solid blanchedalmond;
+
+.navbar_buttons:hover {
+    background-color: blanchedalmond;
+    border: 5px solid blanchedalmond;
 }
+
 .mainDivOfProfileSec {
     padding: 20px;
     flex-direction: row;
@@ -58,7 +62,8 @@
     height: 178px;
     border-radius: 100%;
     align-self: center;
-    justify-content: center;animation: transformAnimation 3s ease;
+    justify-content: center;
+    animation: transformAnimation 3s ease;
 
 }
 
@@ -98,6 +103,49 @@
     font-weight: bold;
     margin-top: 10px;
 }
-.my_name{
-    animation: transformAnimation 3s ease;color: white;
+
+.my_name {
+    width: fit-content;
+    padding: 10px;
+    animation: transformAnimation 3s ease;
+    color: white;
+    border: rgba(255, 255, 255, 0.7) 5px dashed;
+    border-radius: 18px;
+}
+
+.skillSectionDiv {
+    backdrop-filter: blur(11px);
+    padding: 20px;
+    border-radius: 70px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / .4);
+    border: rgba(255, 255, 255, 0.7) 5px solid;
+
+}
+
+.skillText {
+    font-size: 24px;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    border-bottom: rgba(255, 255, 255, 0.7) 5px dashed;
+    border-radius: 18px;
+
+}
+
+.grid-container {
+    align-items: center;justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    width: 75px;
+    height: 75px;
+    text-align:center;
+    margin: 10px;
+}
+.skillTexts{
+
+    font-size: 14px;
+    color: white;font-weight: bold;
 }
