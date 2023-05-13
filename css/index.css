@@ -114,7 +114,8 @@
 }
 
 .skillSectionDiv {
-    backdrop-filter: blur(11px);
+    animation: transformAnimation 3s ease;
+    backdrop-filter: blur(19px);
     padding: 20px;
     border-radius: 70px;
     box-shadow: 0 3px 10px rgb(0 0 0 / .4);
@@ -135,14 +136,15 @@
 .grid-container {
     align-items: center;justify-content: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;animation: transformAnimation 4s ease;
 }
 
 .grid-item {
     width: 75px;
     height: 75px;
     text-align:center;
-    margin: 10px;
+    margin: 15px;
+
 }
 .skillTexts{
 
