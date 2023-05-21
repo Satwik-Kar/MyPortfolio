@@ -3,12 +3,15 @@
     border: 5px solid rgba(255, 255, 255, 0.7);
     border-radius: 70px;
     padding: 9px;
+    display: flex;
+    flex: 1;
     animation: transformAnimation 3s ease;
 }
 
 .unordered-list {
     list-style-type: none;
     margin: 0;
+    flex: 3;
     padding: 0;
     overflow: hidden;
 }
@@ -57,6 +60,24 @@
     }
 }
 
+@keyframes typingUp {
+    from {
+        width: 0
+    }
+    to {
+        width: 190px
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 120px
+    }
+}
+
 .profileDp {
     width: 178px;
     height: 178px;
@@ -81,13 +102,20 @@
     flex: 1;
     display: flex;
     flex-direction: row;
+
     border: rgba(255, 255, 255, 0.7) 5px solid;
     border-radius: 18px;
 }
 
+.singleLogo:hover {
+    transform: translate(-50px);
+}
+
 .logo_anchor {
     flex: 1;
-    text-align: center
+    text-align: center;
+    text-decoration: none;
+
 }
 
 .anchorImage {
@@ -104,16 +132,37 @@
     margin-top: 10px;
 }
 
-.my_name {
-    width: fit-content;
-    padding: 10px;
-    animation: transformAnimation 3s ease;
+.my_name_up {
+    overflow: hidden;
+    font-size: 24px;
+    width: 0;
+    height: 40px;
     color: white;
-    border: rgba(255, 255, 255, 0.7) 5px dashed;
-    border-radius: 18px;
+    border-right: 3px solid orangered;
+    animation: typingUp 3s forwards;
+}
+
+.my_name {
+    overflow: hidden;
+    border-right: 3px solid orangered;
+    font-size: 24px;
+    width: 0;
+    height: 40px;
+    color: white;
+    animation: typing 5.6s forwards;
 }
 
 .skillSectionDiv {
+    animation: transformAnimation 3s ease;
+    backdrop-filter: blur(19px);
+    padding: 20px;
+    border-radius: 70px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / .4);
+    border: rgba(255, 255, 255, 0.7) 5px solid;
+
+}
+
+.projectSectionDiv {
     animation: transformAnimation 3s ease;
     backdrop-filter: blur(19px);
     padding: 20px;
@@ -133,21 +182,47 @@
 
 }
 
+.projectText {
+    font-size: 24px;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    border-bottom: rgba(255, 255, 255, 0.7) 5px dashed;
+    border-radius: 18px;
+
+}
+
 .grid-container {
-    align-items: center;justify-content: center;
+    align-items: center;
+    justify-content: center;
     display: flex;
-    flex-wrap: wrap;animation: transformAnimation 4s ease;
+    flex-wrap: wrap;
+    animation: transformAnimation 4s ease;
 }
 
 .grid-item {
     width: 75px;
     height: 75px;
-    text-align:center;
+    text-align: center;
     margin: 15px;
 
 }
-.skillTexts{
+
+.grid-item:hover {
+    transform: translateY(-10px);
+
+}
+
+.skillTexts {
 
     font-size: 14px;
-    color: white;font-weight: bold;
+    color: white;
+    font-weight: bold;
+}
+
+.headerText {
+    flex: 1;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
 }
