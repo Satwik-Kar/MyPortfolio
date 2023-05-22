@@ -108,7 +108,7 @@
 }
 
 .singleLogo:hover {
-    transform: translate(-50px);
+    transform: scale(120%);
 }
 
 .logo_anchor {
@@ -209,7 +209,7 @@
 }
 
 .grid-item:hover {
-    transform: translateY(-10px);
+    transform: scale(120%);
 
 }
 
@@ -225,4 +225,33 @@
     font-size: 24px;
     color: white;
     font-weight: bold;
+}
+
+.skillsSectionAnchors {
+    text-decoration: none;
+}
+
+.projectsTitles {
+    color: white;
+}
+.ullistProjects{
+    list-style: none;
+    border-left: 4px solid white;
+    margin-left: 50px;
+    padding-left: 26px;
+}
+.ullistProjects li{
+    color: white;
+    list-style-type: none;
+    padding-left: 9px;position: relative;
+    top: 10px;
+}
+.ullistProjects li::before{
+    content: "";
+    display: block;
+    width: 28px;
+    position: absolute;left: -1.5rem;top: 9px;
+    height: 2px;
+    background-color: white;
+
 }
