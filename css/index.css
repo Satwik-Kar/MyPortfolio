@@ -109,6 +109,7 @@
 
 .singleLogo:hover {
     transform: scale(120%);
+    transition-duration: .5s;
 }
 
 .logo_anchor {
@@ -209,6 +210,7 @@
 }
 
 .grid-item:hover {
+    transition-duration: .5s;
     transform: scale(120%);
 
 }
