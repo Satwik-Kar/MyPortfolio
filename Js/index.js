@@ -4,12 +4,11 @@
 
 const USERNAME = 'Satwik-Kar'
 
-const ACCESS_TOKEN = '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'
-
+import {ACCESS_TOKEN} from "../Constants/constants.js";
 
 
 // GitHub API endpoint for fetching user repositories
-const apiUrl = 'https://api.github.com/users/'+USERNAME+'/repos'; // Replace YOUR_USERNAME with the target GitHub username
+const apiUrl = 'https://api.github.com/users/'+USERNAME+'/repos';
 
 
 async function fetchGitHubRepositories() {
