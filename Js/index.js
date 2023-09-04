@@ -4,7 +4,7 @@
 
 const USERNAME = 'Satwik-Kar'
 
-const ACCESS_TOKEN = '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'
+const ACCESS_TOKEN = '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'
 
 
 
