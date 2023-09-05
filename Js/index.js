@@ -4,7 +4,7 @@
 
 const USERNAME = 'Satwik-Kar'
 
-const {ACCESS_TOKEN} = process.env
+const {ACCESS_TOKEN} = process.env.ACCESS_TOKEN
 
 // GitHub API endpoint for fetching user repositories
 const apiUrl = 'https://api.github.com/users/'+USERNAME+'/repos';
