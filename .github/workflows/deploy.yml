@@ -1,0 +1,37 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Adjust this to match your repository's main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7  # Adjust to match your Ruby version
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+        working-directory: ./docs  # Adjust to your site's directory
+
+      - name: Build and deploy
+        run: |
+          bundle exec jekyll build
+          echo 'yourusername.github.io' > ./docs/CNAME  # Optional for custom domains
+        working-directory: ./docs  # Adjust to your site's directory
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/_site  # Adjust to your site's build directory
