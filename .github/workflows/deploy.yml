@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Adjust this to match your repository's main branch
+      - master  # Adjust this to match your repository's main branch
 
 jobs:
   deploy:
@@ -22,16 +22,16 @@ jobs:
         run: |
           gem install bundler
           bundle install
-        working-directory: ./docs  # Adjust to your site's directory
+        working-directory: ./  # Adjust to your site's directory
 
       - name: Build and deploy
         run: |
           bundle exec jekyll build
-          echo 'yourusername.github.io' > ./docs/CNAME  # Optional for custom domains
-        working-directory: ./docs  # Adjust to your site's directory
+          echo 'Satwik-Kar.github.io' > ./docs/CNAME  # Optional for custom domains
+        working-directory: ./  # Adjust to your site's directory
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/_site  # Adjust to your site's build directory
+          publish_dir: ./  # Adjust to your site's build directory
