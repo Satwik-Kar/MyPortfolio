@@ -22,5 +22,5 @@ jobs:
           export MY_TOKEN=${{ secrets.ACCESS_TOKEN }}
           npm run deploy
         env:
-          YOUR_PAT_SECRET_NAME: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         working-directory: ./
