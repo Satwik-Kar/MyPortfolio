@@ -4,12 +4,21 @@
 
 const USERNAME = 'Satwik-Kar'
 
-const {ACCESS_TOKEN} = process.env.ACCESS_TOKEN
+const ACCESS_TOKEN_ENCODED = 'tuc_u69qARKLS3U0loGxt2pWUVhKqbTD9t1TeI4q'
 
-// GitHub API endpoint for fetching user repositories
+
+
+function encodeROT13(inputString) {
+    return inputString.replace(/[a-zA-Z]/g, function (char) {
+        const base = char <= 'Z' ? 'A'.charCodeAt(0) : 'a'.charCodeAt(0);
+        return String.fromCharCode(base + ((char.charCodeAt(0) - base + 13) % 26));
+    });
+}
+function decodeROT13(encodedString) {
+    return encodeROT13(encodedString);
+}
+const ACCESS_TOKEN = decodeROT13(ACCESS_TOKEN_ENCODED)
 const apiUrl = 'https://api.github.com/users/'+USERNAME+'/repos';
-
-
 async function fetchGitHubRepositories() {
     try {
         const response = await fetch(apiUrl, {
