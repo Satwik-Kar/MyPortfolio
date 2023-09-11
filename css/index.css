@@ -8,6 +8,10 @@
     animation: transformAnimation 3s ease;
 }
 
+body {
+
+}
+
 .unordered-list {
     list-style-type: none;
     margin: 0;
@@ -236,23 +240,29 @@
 .projectsTitles {
     color: white;
 }
-.ullistProjects{
+
+.ullistProjects {
     list-style: none;
     border-left: 4px solid white;
     margin-left: 50px;
     padding-left: 26px;
 }
-.ullistProjects li{
+
+.ullistProjects li {
     color: white;
     list-style-type: none;
-    padding-left: 9px;position: relative;
-    top: 10px;
+    padding-left: 9px;
+    position: relative;
+    top: 9px;
 }
-.ullistProjects li::before{
+
+.ullistProjects li::before {
     content: "";
     display: block;
     width: 28px;
-    position: absolute;left: -1.5rem;top: 9px;
+    position: absolute;
+    left: -1.5rem;
+    top: 9px;
     height: 2px;
     background-color: white;
 
