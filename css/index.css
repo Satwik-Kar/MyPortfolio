@@ -23,18 +23,24 @@
 }
 
 .navbar_links {
-    border: 5px solid white;
-    border-radius: 15px;margin: 4px;
-    background-color: white;
+
+    border-radius: 15px;
+    margin: 4px;
+    color: white;
     cursor: pointer;
 }
-.navbar_title{
+
+.navbar_title {
     color: white;
+}
+
+.navbar_toggle {
+    color: #ffffff;
 }
 
 .navbar_links:hover {
     background-color: blanchedalmond;
-    border: 5px solid blanchedalmond;
+
 }
 
 .mainDivOfProfileSec {
