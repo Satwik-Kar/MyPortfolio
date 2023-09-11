@@ -22,14 +22,17 @@
     margin-left: 20px
 }
 
-.navbar_buttons {
+.navbar_links {
     border: 5px solid white;
-    border-radius: 18px;
+    border-radius: 15px;margin: 4px;
     background-color: white;
     cursor: pointer;
 }
+.navbar_title{
+    color: white;
+}
 
-.navbar_buttons:hover {
+.navbar_links:hover {
     background-color: blanchedalmond;
     border: 5px solid blanchedalmond;
 }
