@@ -79,4 +79,14 @@ document.addEventListener("DOMContentLoaded", function () {
         sectionToScrollAbout.scrollIntoView({behavior: "smooth"});
     });
 });
+async function randomQuote() {
+    const response = await fetch('https://api.quotable.io/random')
+    const quote = await response.json()
 
+    const title = document.getElementById('quote-title')
+    const author = document.getElementById('quote-author')
+    // Output the quote and author name
+    title.innerText = quote.content
+    author.innerText = quote.author
+}
+randomQuote()
