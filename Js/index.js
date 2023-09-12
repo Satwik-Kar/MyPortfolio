@@ -1,11 +1,6 @@
-
-
-
-
 const USERNAME = 'Satwik-Kar'
 
 const ACCESS_TOKEN_ENCODED = 'tuc_u69qARKLS3U0loGxt2pWUVhKqbTD9t1TeI4q'
-
 
 
 function encodeROT13(inputString) {
@@ -14,11 +9,14 @@ function encodeROT13(inputString) {
         return String.fromCharCode(base + ((char.charCodeAt(0) - base + 13) % 26));
     });
 }
+
 function decodeROT13(encodedString) {
     return encodeROT13(encodedString);
 }
+
 const ACCESS_TOKEN = decodeROT13(ACCESS_TOKEN_ENCODED)
-const apiUrl = 'https://api.github.com/users/'+USERNAME+'/repos';
+const apiUrl = 'https://api.github.com/users/' + USERNAME + '/repos';
+
 async function fetchGitHubRepositories() {
     try {
         const response = await fetch(apiUrl, {
@@ -56,3 +54,29 @@ async function fetchGitHubRepositories() {
 }
 
 fetchGitHubRepositories();
+document.addEventListener("DOMContentLoaded", function () {
+    var scrollButtonSkill = document.getElementById("skill_btn");
+    var sectionToScrollSkill = document.getElementById("skill_section");
+    scrollButtonSkill.addEventListener("click", function () {
+        sectionToScrollSkill.scrollIntoView({behavior: "smooth"});
+    });
+
+    var scrollButtonHome = document.getElementById("home_btn");
+    var sectionToScrollHome = document.getElementById("home_section");
+    scrollButtonHome.addEventListener("click", function () {
+        sectionToScrollHome.scrollIntoView({behavior: "smooth"});
+    });
+
+    var scrollButtonContact = document.getElementById("contact_btn");
+    var sectionToScrollContact = document.getElementById("ccontact_section");
+    scrollButtonContact.addEventListener("click", function () {
+        sectionToScrollContact.scrollIntoView({behavior: "smooth"});
+    });
+
+    var scrollButtonAbout = document.getElementById("about_btn");
+    var sectionToScrollAbout = document.getElementById("about_section");
+    scrollButtonAbout.addEventListener("click", function () {
+        sectionToScrollAbout.scrollIntoView({behavior: "smooth"});
+    });
+});
+

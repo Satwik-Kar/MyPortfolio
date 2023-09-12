@@ -23,10 +23,11 @@
 }
 
 .navbar_links {
-
+    padding: 10px;
     border-radius: 15px;
     margin: 4px;
     color: white;
+
     cursor: pointer;
 }
 
@@ -107,7 +108,7 @@
 }
 
 .singleLogo {
-    width: 160px;
+    min-width: 160px;
     margin: 4px;
     flex: 1;
     display: flex;
@@ -119,7 +120,7 @@
 
 .singleLogo:hover {
     transform: scale(120%);
-    transition-duration: .5s;
+    transition-duration: .2s;
 }
 
 .logo_anchor {
@@ -220,7 +221,7 @@
 }
 
 .grid-item:hover {
-    transition-duration: .5s;
+    transition-duration: .2s;
     transform: scale(120%);
 
 }
