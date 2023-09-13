@@ -281,17 +281,3 @@
     background-color: white;
 
 }
-@media screen and (max-width: 600px){
-    .mainDivOfProfileSec {
-        padding: 20px;
-        flex-direction: row;
-        display: flex;
-        flex: 2;
-        border: 5px solid rgba(255, 255, 255, 0.7);
-        border-radius: 70px;
-        box-shadow: 0 3px 10px rgb(0 0 0 / .4);
-        backdrop-filter: blur(11px);
-        animation: transformAnimation 2s ease;
-    }
-
-}
