@@ -9,10 +9,9 @@
     padding: 5px;
 }
 
-/* Media query for screens with a maximum width of 768px */
 @media screen and (max-width: 768px) {
     .body {
-        font-size: 14px;
+        font-size: 4px;
     }
 }
 .navbar {
@@ -102,7 +101,7 @@
         width: 0
     }
     to {
-        width: 190px
+        width: 260px
     }
 }
 
@@ -111,7 +110,7 @@
         width: 0
     }
     to {
-        width: 120px
+        width: 140px
     }
 }
 
@@ -182,7 +181,7 @@
     width: 0;
     height: 40px;
     color: white;
-    animation: typing 5.6s forwards;
+    animation: typing 4s forwards;
 }
 
 .skillSectionDiv {
