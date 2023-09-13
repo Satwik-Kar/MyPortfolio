@@ -54,6 +54,12 @@ async function fetchGitHubRepositories() {
 }
 
 fetchGitHubRepositories();
+
+var reloadLink = document.getElementById("reload-title");
+
+reloadLink.onclick = function() {
+    location.reload();
+};
 document.addEventListener("DOMContentLoaded", function () {
     var scrollButtonSkill = document.getElementById("skill_btn");
     var sectionToScrollSkill = document.getElementById("skill_section");

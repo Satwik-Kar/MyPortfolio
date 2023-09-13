@@ -56,6 +56,15 @@
     animation: transformAnimation 2s ease;
 }
 
+.cardStyle {
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.15);
+    font-weight: bold;
+    color: white;
+    border: 5px white solid;
+    animation: transformAnimation 4s ease;
+}
+
 @keyframes transformAnimation {
     0% {
         /* Initial state */
@@ -114,8 +123,6 @@
     display: flex;
     flex-direction: row;
 
-    border: rgba(255, 255, 255, 0.7) 5px solid;
-    border-radius: 18px;
 }
 
 .singleLogo:hover {
