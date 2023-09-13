@@ -92,7 +92,7 @@ async function randomQuote() {
     const title = document.getElementById('quote-title')
     const author = document.getElementById('quote-author')
     // Output the quote and author name
-    title.innerText = quote.content
+    title.innerText ="\""+ quote.content+"\""
     author.innerText = quote.author
 }
 randomQuote()
