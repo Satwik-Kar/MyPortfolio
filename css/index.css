@@ -1,15 +1,7 @@
 
 
 @media screen and (max-width:600px) {
-    .navbar {
-        background-color: white;
-        border: 5px solid rgba(255, 255, 255, 0.7);
-        border-radius: 15px;
-        padding: 9px;
-        display: flex;
-        flex: 1;
-        animation: transformAnimation 3s ease;
-    }
+
 
 }
 .navbar {
