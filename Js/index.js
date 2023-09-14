@@ -92,17 +92,16 @@ async function randomQuote() {
 
     const title = document.getElementById('quote-title')
     const author = document.getElementById('quote-author')
-    // Output the quote and author name
     title.innerText ="\""+ quote.content+"\""
     author.innerText = quote.author
 }
 randomQuote()
 document.getElementById('contact-btn-done').addEventListener('click', function() {
     const recipient = 'satwik.k.2000@gmail.com';
-    const subject = 'Purpose of meeting: ';
+    const subject = 'Purpose of meeting : ';
     const name = document.getElementById('contact-input-name').value
     const body =  document.getElementById('contact-input-body').value
-    const fBody = "Hello, myself "+name+". "+body
+    const fBody = "Hello, Myself "+name+". "+body
     const emailLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject)+"&body="+encodeURIComponent(fBody);
 
     window.location.href = emailLink;
