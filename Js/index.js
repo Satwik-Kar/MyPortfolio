@@ -99,9 +99,11 @@ async function randomQuote() {
 randomQuote()
 document.getElementById('contact-btn-done').addEventListener('click', function() {
     const recipient = 'satwik.k.2000@gmail.com';
-    const subject = 'Purpose of meeting - ';
+    const subject = 'Purpose of meeting: ';
+    const name = document.getElementById('contact-input-name').value
     const body =  document.getElementById('contact-input-body').value
-    const emailLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+    const fBody = "Hello, myself "+name+". "+body
+    const emailLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject)+"&body="+encodeURIComponent(fBody);
 
     window.location.href = emailLink;
 });
