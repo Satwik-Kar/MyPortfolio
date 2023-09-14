@@ -110,7 +110,7 @@
         width: 0
     }
     to {
-        width: 230px
+        width: 260px
     }
 }
 
@@ -300,5 +300,15 @@
     top: 9px;
     height: 2px;
     background-color: white;
+
+}
+.contact-section{
+    animation: transformAnimation 3s ease;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    color: white;
+    border-radius: 70px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / .4);
+    border: rgba(255, 255, 255, 0.7) 3px solid;
 
 }

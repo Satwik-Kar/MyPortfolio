@@ -79,8 +79,9 @@ document.addEventListener("DOMContentLoaded", function () {
         sectionToScrollContact.scrollIntoView({behavior: "smooth"});
     });
 
+
     var scrollButtonAbout = document.getElementById("about_btn");
-    var sectionToScrollAbout = document.getElementById("about_section");
+    var sectionToScrollAbout = document.getElementById("about-section");
     scrollButtonAbout.addEventListener("click", function () {
         sectionToScrollAbout.scrollIntoView({behavior: "smooth"});
     });
@@ -96,3 +97,11 @@ async function randomQuote() {
     author.innerText = quote.author
 }
 randomQuote()
+document.getElementById('contact-btn-done').addEventListener('click', function() {
+    var recipient = 'satwik.k.2000@gmail.com';
+    var subject = 'Purpose of meeting - ';
+
+    var emailLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject);
+
+    window.location.href = emailLink;
+});
