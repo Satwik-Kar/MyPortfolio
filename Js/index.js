@@ -100,7 +100,7 @@ randomQuote()
 document.getElementById('contact-btn-done').addEventListener('click', function() {
     const recipient = 'satwik.k.2000@gmail.com';
     const subject = 'Purpose of meeting - ';
-    const body =  document.getElementById("contact-input-body").innerText
+    const body =  document.getElementById("contact-input-body").value
     var emailLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
 
     window.location.href = emailLink;
