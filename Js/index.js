@@ -98,10 +98,10 @@ async function randomQuote() {
 }
 randomQuote()
 document.getElementById('contact-btn-done').addEventListener('click', function() {
-    var recipient = 'satwik.k.2000@gmail.com';
-    var subject = 'Purpose of meeting - ';
-
-    var emailLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject);
+    const recipient = 'satwik.k.2000@gmail.com';
+    const subject = 'Purpose of meeting - ';
+    const body =  document.getElementById("contact-input-body").innerText
+    var emailLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject)+"&body="+body;
 
     window.location.href = emailLink;
 });
